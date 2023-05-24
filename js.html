@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="" class="header-logo">
+        <nav class="header-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">Об авторе</a>
+            <a href="modules.html">Модули</a>
+            <a href="my-projects.html">Мои проекты</a>
+        </nav>
+    </header>
+    <main class="container" id="main">
+
+        <h2>Страница для работы с JS</h2>
+
+        <h3>первые кнопки с onclick</h3>
+        <!-- кнопка добавления текста -->
+        <button type="button" onclick="hello()">Нажми на меня</button>
+
+        <button type="button" onclick="set_text('2', 'hello')">Кнопка 2</button>
+
+        <button type="button" onclick="set_text('3', 'Boba')">кнопка 3</button>
+
+        <p id="1">Абзац 1</p>
+        <p id="2">Абзац 2</p>
+        <p id="3">Абзац 3</p>
+
+        <h3>Работа с формами JS</h3>
+        <div class="form">
+            <div class="form__item">
+                <div class="form__item-tittle">
+                    ФИО
+                </div>
+                <input type="text" placeholder="Иванов Иван Иванович" id="name">
+            </div>
+
+            <div class="form__item">
+                <div class="form__item-tittle">
+                    E-mail
+                </div>
+                <input type="text" placeholder="@mail.ru" id='email'>
+            </div>
+
+            <div class="form__item">
+                <div class="form__item-tittle">
+                    Телефон
+                </div>
+                <input type="tel" placeholder="+7 777 777 77 77" id='phone'>
+            </div>
+
+            <button type="submit" onclick="submit()">Отправить</button>
+            <p id="status"></p>
+        </div>
+
+        <h3>Изменение стилей с помощью JS</h3>
+        <h4>Изменение цвета <body>
+        </body></h4>
+        <button type="button" onclick="set_body_color_red()">Красный</button>
+        <button type="button" onclick="set_body_color_blue()">Синий</button>
+        <button type="button" onclick="set_body_color_yellow()">Жёлтый</button>
+        <button type="button" onclick="set_body_color_green()">Зелёный</button>
+        <button type="button" onclick="set_body_color_black()">Чёрный</button>
+        <button type="button" onclick="set_body_color_grey()">Обратно</button>
+
+        <div>
+            <div class="form__item">
+                <div class="form__item-tittle">
+                    Введите цвет
+                </div>
+                <input type="text" id='color'>
+            </div>
+        </div>
+        <button type="button" onclick="">Установите цвет</button>
+
+        <h4 id="font_size">Размера шрифта</h4>
+        <button type="button" onclick="set_font_size('font_size','32px')">Изменить размер текста</button>
+        <h4 id="custom_text">АВОВА</h4>
+        <button type="button" onclick="custom_text('custom_text','35px')">АБОБА</button>
+
+        <h3>Изменение HTML-атрибутов с помощью JS</h3>
+        <img src="images/pic_bulboff.gif" alt="" id="lamp">
+
+        <button type="button" onclick="lampOn()">вкл</button>
+
+        <button type="button" onclick="lampOff()">выкл</button>
+
+        <h4>Удаление тегов с помощью JS</h4>
+        <h5 id="title">ЗАГОЛОВОК</h5>
+        <button type="button" onclick="deleteTitle()">удалить заголовок</button>
+
+        <h4>добавление тегов с помощью JS</h4>
+        <div id="buttonList">
+            <button type="button" onclick="createButton()">Создать кнопку</button>
+            
+        </div>
+
+        <div id="gg_i_livau">
+            <button type="button" onclick="createP()">Создать абзац</button>
+
+        </div>
+
+        <h3>объекты Java script</h3>
+
+        <p id="person"></p>
+        <button type="button" onclick="showPerson()">показать объект  person</button>
+
+        <h3>Самостоятельная работа</h3>
+
+        <p id="avto"></p>
+        <button type="button" onclick="ShowAvto()">показать объект  avto</button>
+
+        <p id="cat"></p>
+        <button type="button" onclick="cat.showInfo()">Показать объект cat</button>
+
+    </main>
+    <footer>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>сайт разработон резидентом, kiber one-Матвей Ковешников</p>
+        </div>
+    </footer>
+</body>
+</html>
